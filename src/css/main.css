@@ -14,4 +14,30 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+  height: 5rem;
+}
+.navbar .nav-logo {
+  height: 50px;
+}
+.navbar .nav-logo img {
+  height: 100%;
+  width: auto;
+}
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-menu li {
+  margin: 0 0.8rem;
+}
+
 /*# sourceMappingURL=main.css.map */
