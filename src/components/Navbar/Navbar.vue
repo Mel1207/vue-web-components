@@ -4,18 +4,20 @@
             <img src="../../assets/images/logo-main.svg" alt="">
         </div>
         
-
         <ul class="nav-menu">
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">About</a></li>
-            <li><a href="#!">Blogs</a></li>
-            <li><a href="#!">Contacts</a></li>
+            <NavLinks v-for="navLink in navLinks" :key="navLink.id" :title="navLink.item" :link="navLink.link"/>
         </ul>
     </div>
+    
 </template>
 
 <script>
+import NavLinks from './NavLinks.vue'
+
 export default {
+    components: {
+        NavLinks
+    }, 
     setup() {
         const navLinks = [
         {
