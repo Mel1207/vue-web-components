@@ -18,12 +18,20 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #484848;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 40px;
+  padding: 0 2.2rem;
   height: 5rem;
+  background: red;
 }
 .navbar .nav-logo {
   height: 50px;
