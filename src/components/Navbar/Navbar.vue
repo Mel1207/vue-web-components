@@ -6,44 +6,66 @@
         
         <ul class="nav-menu">
             <NavLinks v-for="navLink in navLinks" :key="navLink.id" :title="navLink.item" :link="navLink.link"/>
+            <li @click="openNav">
+                <div class="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
         </ul>
     </div>
-    
+    <NavbarMobile v-if="isOpen" @close="navClose"/>
 </template>
 
 <script>
 import NavLinks from './NavLinks.vue'
+import NavbarMobile from './NavbarMobile.vue'
+import { ref } from '@vue/reactivity'
 
 export default {
     components: {
-        NavLinks
+        NavLinks,
+        NavbarMobile
     }, 
     setup() {
+        const isOpen = ref(false)
         const navLinks = [
-        {
-            id: 1,
-            item: 'Home',
-            link: '/'
-        },
-        {
-            id: 2,
-            item: 'About',
-            link: '/About'
-        },
-        {
-            id: 3,
-            item: 'Blogs',
-            link: '/Blogs'
-        },
-        {
-            id: 4,
-            item: 'Contacts',
-            link: '/Contacts'
-        },
-    ]
+            {
+                id: 1,
+                item: 'Home',
+                link: '/'
+            },
+            {
+                id: 2,
+                item: 'About',
+                link: 'about'
+            },
+            {
+                id: 3,
+                item: 'Blogs',
+                link: '/Blogs'
+            },
+            {
+                id: 4,
+                item: 'Contacts',
+                link: '/Contacts'
+            }
+        ]
+
+        const openNav = () => {
+            isOpen.value = !isOpen.value
+            console.log('nav is open')
+        }
+
+        const navClose = () => {
+            isOpen.value = false
+        }
 
         return {
-            navLinks
+            navLinks,
+            isOpen,
+            openNav,
+            navClose
         }
     }
 }
