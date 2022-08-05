@@ -25,6 +25,19 @@ a {
   font-size: 1.1rem;
 }
 
+.nav-top {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(90.01deg, #3FE4BD 9.59%, #8EAEFF 98.96%);
+  padding: 10px 0;
+}
+.nav-top span {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
