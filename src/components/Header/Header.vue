@@ -1,6 +1,7 @@
 <template>
     <div class="header container">
-        <h1>Build Fast Component with ease</h1>
+        <h1>Designed to Build Your Component Fast</h1>
+        
     </div>
 </template>
 
