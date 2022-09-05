@@ -7,12 +7,19 @@
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry.'s standard dummy text ever since the 1500s
             </p>
+
+            <div class="controls">
+                <Button title="Get Started" type="btn-primary"/>
+                <Button title="Documentation" type="btn-secondary"/>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
+import Button from '../Buttons/Button.vue'
 
+export default {
+    components: { Button }
 }
 </script>
