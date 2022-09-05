@@ -10,7 +10,7 @@
 
             <div class="controls">
                 <Button title="Get Started" type="btn-primary"/>
-                <Button title="Documentation" type="btn-secondary"/>
+                <Button title="Documentation" type="btn-secondary" minIcon="logo-main.svg"/>
             </div>
         </div>
     </div>
