@@ -2,7 +2,7 @@
     <NavTopMini message="Version 1.0 Beta Test ⚡"/>
     <div class="navbar">
         <div class="nav-logo">
-            <img src="../../assets/images/logo-main.svg" alt="">
+            <img src="../../assets/images/logo-vui.svg" alt="VUI LOGO">
         </div>
         
         <ul class="nav-menu">
