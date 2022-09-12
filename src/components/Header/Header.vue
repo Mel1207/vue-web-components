@@ -1,6 +1,6 @@
 <template>
-    <div class="header container">
-        <div>
+    <div class="header">
+        <div class="container">
             <h1>Designed to Build Your <br> Component 
                 <span class="header-highlight">Lightning Fast</span>
             </h1>

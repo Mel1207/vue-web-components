@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container flex item-center">
         <h2>Text about</h2>
     </div>
 </template>
