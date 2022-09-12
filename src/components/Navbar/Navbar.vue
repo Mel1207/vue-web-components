@@ -1,7 +1,8 @@
 <template>
+    <NavTopMini message="Version 1.0 Beta Test ⚡"/>
     <div class="navbar">
         <div class="nav-logo">
-            <img src="../../assets/images/logo-main.svg" alt="">
+            <img src="../../assets/images/logo-vui.svg" alt="VUI LOGO">
         </div>
         
         <ul class="nav-menu">
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+import NavTopMini from './NavTopMini.vue'
 import NavLinks from './NavLinks.vue'
 import NavbarMobile from './NavbarMobile.vue'
 import { ref } from '@vue/reactivity'
@@ -25,7 +27,8 @@ import { ref } from '@vue/reactivity'
 export default {
     components: {
         NavLinks,
-        NavbarMobile
+        NavbarMobile,
+        NavTopMini
     }, 
     setup() {
         const isOpen = ref(false)

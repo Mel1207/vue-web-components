@@ -1,17 +1,17 @@
 <template>
   <Navbar />
-  <div class="home">
-    <h1>hey this is Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis recusandae ullam illum error</p>
-  </div>
+  <Header />
+  <SectionAbout />
 </template>
 
 <script>
+import Header from '../components/Header/Header.vue'
 import Navbar from '../components/Navbar/Navbar.vue'
+import SectionAbout from '../components/About/SectionAbout.vue'
 
 export default {
   name: 'HomeView',
-  components: { Navbar },
+  components: { Navbar, Header, SectionAbout },
   setup() {
     console.log('hey mel')
 

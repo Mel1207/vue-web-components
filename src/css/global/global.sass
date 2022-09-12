@@ -12,6 +12,18 @@ a
     font-weight: 500
     font-size: 1.1rem
 
+.nav-top 
+    height: auto
+    width: 100%
+    background: linear-gradient(90.01deg, #FFB800 9.59%, #FF906D 98.96%)
+    padding: 10px 0
+
+    span 
+        display: block
+        text-align: center
+        color: $white
+        font-size: 12px
+
 .navbar 
     display: flex
     align-items: center
@@ -20,7 +32,7 @@ a
     height: 5rem
 
     .nav-logo
-        height: 50px
+        height: 35px
         
         img 
             height: 100%
@@ -33,7 +45,6 @@ a
         li 
             cursor: pointer
             margin: 0 .8rem
-
 
 .hamburger-menu 
     height: 10px
@@ -79,3 +90,69 @@ a
             margin-bottom: 2rem
             font-size: 1.3rem
             cursor: pointer
+
+.header 
+    // height: calc(100vh - 5.5rem)
+    height: 100vh
+    width: 100%
+    display: flex 
+    align-items: center
+    justify-content: center
+    background: url('./../assets/images/img-header-bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+    h1 
+        text-align: center
+        font-size: 3.2rem
+        line-height: 4rem
+        margin-bottom: 1.2rem
+
+    p 
+        text-align: center
+        font-size: 1rem 
+        line-height: 1.5rem
+
+    .header-highlight 
+        background: linear-gradient(91.92deg, #FFB800 40.39%, #FF906D 105.96%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+
+.btn
+    width: max-content
+    height: 50px
+    outline: none
+    border: none 
+    display: flex 
+    align-items: center
+    justify-content: center
+    width: 165px 
+    border-radius: 6px
+    margin: 0 10px
+    cursor: pointer
+
+.btn-primary 
+    background: linear-gradient(95.16deg, #FFB800 -9.63%, #FF906D 115.44%)
+    color: $white
+
+.btn-secondary 
+    background: linear-gradient(91.92deg, #FFB800 40.39%, #FF906D 105.96%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    border: 1px solid #FFB800
+
+.controls 
+    display: flex
+    margin: 3.5rem auto 0 auto
+    width: max-content
+
+
+.container 
+    width: 80%
+    max-width: 1280px
+    margin: 0 auto
