@@ -6,6 +6,7 @@
             <Button title="Learn More" type="btn-primary" />
         </div>
         <img src="" alt="">
+        <!-- to add image -->
     </div>
 </template>
 
