@@ -183,5 +183,8 @@ a {
   border: 1px solid #000;
   margin: 10px 0;
 }
+.card h5 {
+  margin-bottom: 3px;
+}
 
 /*# sourceMappingURL=main.css.map */

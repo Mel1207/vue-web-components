@@ -5,7 +5,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptates nostrum tempora!</p>
             <Button title="Learn More" type="btn-primary" />
             <br>
-            <Card v-for="cardItem in cardItems" :key="cardItem.id"/>
+            <Card v-for="cardItem in cardItems" :key="cardItem.title" :title="cardItem.title" :description="cardItem.description" />
         </div>
         <img src="" alt="">
         <!-- to add image -->
@@ -38,7 +38,6 @@ export default {
                 description: 'lorem ipsum dolor sit amet'
             }
         ]
-
 
 
         return {
