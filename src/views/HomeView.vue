@@ -13,10 +13,7 @@ export default {
   name: 'HomeView',
   components: { Navbar, Header, SectionAbout },
   setup() {
-    console.log('hey mel')
-
-    return {
-    }
+    return {}
   }
 }
 </script>

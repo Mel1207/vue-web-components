@@ -1,11 +1,14 @@
 <template>
     <div class="container">
-        <div class="flex item-center">
+        <div class="">
             <h2>Text about</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptates nostrum tempora!</p>
-            <Button title="Learn More" type="btn-primary" />
+
             <br>
-            <Card v-for="cardItem in cardItems" :key="cardItem.title" :title="cardItem.title" :description="cardItem.description" />
+            <div class="row">
+                <Card v-for="cardItem in cardItems" :key="cardItem.title" :title="cardItem.title" :description="cardItem.description" />
+            </div>
+            
         </div>
         <img src="" alt="">
         <!-- to add image -->
@@ -31,6 +34,14 @@ export default {
             },
             { 
                 title: 'title 3',
+                description: 'lorem ipsum dolor sit amet'
+            },
+            { 
+                title: 'title 4',
+                description: 'lorem ipsum dolor sit amet'
+            },
+            { 
+                title: 'title 4',
                 description: 'lorem ipsum dolor sit amet'
             },
             { 
