@@ -5,7 +5,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptates nostrum tempora!</p>
             <Button title="Learn More" type="btn-primary" />
             <br>
-            <Card />
+            <Card v-for="cardItem in cardItems" :key="cardItem.id"/>
         </div>
         <img src="" alt="">
         <!-- to add image -->
@@ -20,6 +20,30 @@ export default {
     props: ['title', 'type'],
     components: { Button, Card },
     setup() {
+        const cardItems = [
+            { 
+                title: 'title 1',
+                description: 'lorem ipsum dolor sit amet'
+            },
+            { 
+                title: 'title 2',
+                description: 'lorem ipsum dolor sit amet'
+            },
+            { 
+                title: 'title 3',
+                description: 'lorem ipsum dolor sit amet'
+            },
+            { 
+                title: 'title 4',
+                description: 'lorem ipsum dolor sit amet'
+            }
+        ]
+
+
+
+        return {
+            cardItems
+        }
     }
 
 }
