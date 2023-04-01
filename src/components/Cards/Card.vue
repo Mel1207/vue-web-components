@@ -1,13 +1,12 @@
 <template>
-    <div class="card">
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
-    </div>
+  <div class="card">
+    <h2 class="h4">{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-    props: ['title', 'description']
-
-}
+  props: ["title", "description"],
+};
 </script>
