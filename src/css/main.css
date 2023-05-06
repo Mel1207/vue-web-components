@@ -37,11 +37,6 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1080px) {
-  body {
-    background: red;
-  }
-}
 .card {
   padding: 1.5rem;
   border-radius: 12px;
