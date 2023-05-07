@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>test</h1>
+    <h2 style="margin-bottom: 1.5rem">FAQ</h2>
     <Accordion />
   </div>
 </template>
@@ -11,8 +11,7 @@ import Accordion from '../Accordion/Accordion.vue'
 export default {
   components: { Accordion },
   setup() {
-
-
+  
     return {}
   }
 }
