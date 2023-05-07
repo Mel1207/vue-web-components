@@ -1,15 +1,16 @@
 <template>
-  <div v-for="item in accItems" :key="item.id">
-    <div class="acc-title">{{ item.title }}</div>
-    <div class="acc-message">{{ item.message }}</div>
+  <div v-for="item in accItems" :key="item.id" class="accordion-card">
+    <div class="acc-title"  @click="item.isOpen = !item.isOpen">{{ item.title }} <span>+</span></div>
+    <div class="acc-message" v-if="item.isOpen">{{ item.message }}</div>
   </div>
 </template>
 
 <script>
+import { ref } from '@vue/reactivity'
 export default {
   components: {},
   setup() {
-    const accItems = [
+    const accItems = ref([
       { 
         id: 1,
         title: "Test title 1",
@@ -28,9 +29,13 @@ export default {
         message: "lorem ipsum dolor sit amet is simply dummy text of the printing and typesetting industry.",
         isOpen: false
       }
-    ]
+    ])
 
-    return { accItems }
+    const runConso = (item) => {
+      console.log('im running console ' + item.isOpen)
+    }
+
+    return { accItems, runConso }
   }
 
 }

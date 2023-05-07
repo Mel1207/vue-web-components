@@ -37,6 +37,29 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.accordion-card {
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #00000025;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.accordion-card .acc-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-card .acc-message {
+  margin-top: 1rem;
+}
+
+.accordion-card:hover {
+  background: #f7f7f7;
+}
+
 .card {
   padding: 1.5rem;
   border-radius: 12px;
