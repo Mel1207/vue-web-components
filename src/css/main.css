@@ -228,6 +228,7 @@ body {
   line-height: 4.3rem;
   margin-bottom: 1.2rem;
   font-weight: 700;
+  margin-top: 2rem;
 }
 .header p {
   text-align: center;
@@ -301,7 +302,6 @@ body {
 @media screen and (max-width: 900px) {
   .header h1 {
     font-size: 2.8rem;
-    margin-top: 2rem;
   }
 
   .nav-menu {
