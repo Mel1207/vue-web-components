@@ -8,7 +8,7 @@
       </p>
 
       <br />
-      <div class="row">
+      <div class="row-cards">
         <Card
           v-for="cardItem in cardItems"
           :key="cardItem.title"
