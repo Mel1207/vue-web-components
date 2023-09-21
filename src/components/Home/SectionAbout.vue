@@ -1,14 +1,10 @@
 <template>
   <div class="container space-x-5">
     <div class="">
-      <h2>Text about</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-        voluptates nostrum tempora!
-      </p>
+      <p class="text-about">We are partnered with organizations and individuals <br> in building their amazing websites</p>
 
       <br />
-      <div class="row">
+      <div class="row-cards">
         <Card
           v-for="cardItem in cardItems"
           :key="cardItem.title"

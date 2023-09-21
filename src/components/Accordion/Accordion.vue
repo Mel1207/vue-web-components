@@ -1,7 +1,9 @@
 <template>
   <div v-for="item in accItems" :key="item.id" class="accordion-card">
     <div class="acc-title"  @click="item.isOpen = !item.isOpen">{{ item.title }} <span>+</span></div>
-    <div class="acc-message" v-if="item.isOpen">{{ item.message }}</div>
+    <transition name="fade">
+      <div class="acc-message" v-if="item.isOpen">{{ item.message }}</div>
+    </transition>
   </div>
 </template>
 
