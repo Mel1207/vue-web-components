@@ -293,6 +293,10 @@ body {
   grid-gap: 3rem;
 }
 
+.text-about {
+  text-align: center;
+}
+
 @media screen and (max-width: 1080px) {
   .row-cards {
     grid-template-columns: repeat(2, auto) !important;
